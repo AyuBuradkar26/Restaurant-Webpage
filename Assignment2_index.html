@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rasraj Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Ayush Buradkar">
+    <meta name="description" content="Restaurant website">
+    <link rel="stylesheet" href="Assign2.css">
+    <style>
+        #N1 {
+            text-align: center;
+            background-color: cadetblue;
+            border: 2px;
+            border-radius: 8px;
+        }
+        
+        .I1 {
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+        
+        .R,#M {
+            text-align: center;
+            color: aliceblue;
+            padding: 10px;
+        }
+        #M{
+            border:3px solid aliceblue;
+            width:50%;
+            margin: auto;
+            padding: 10px;
+        }
+        #Rdate,
+        #Rtime,
+        #PS {
+            margin-right: 20px;
+        }
+        
+        
+        input[type=submit]
+        {
+            background-color: aliceblue;
+        }
+        
+        .C{
+        float: left;
+        width: 23.5%;
+        padding: 5px;
+        display: block;
+        }
+       
+        div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 24%;
+        
+        }
+
+        div.gallery:hover {
+        border: 1px solid #777;
+        }
+
+        div.gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        div.desc {
+        padding: 15px;
+        text-align: center;
+        background-color: cadetblue;
+        }
+        
+        #Ord img{
+            border-radius: 8px;
+            border: 3px dashed cadetblue;
+        }
+        
+        .C label{
+            cursor: pointer;
+            display: inline-block;
+            padding: 3px 6px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .C input{
+            font-size: inherit;
+        }
+
+        .V{  
+            float: left;
+            width: 48%;
+            padding-right: 10px;
+            display: block;
+        }
+        body{
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
+    
+      
+</head>
+
+<body>
+    <header>
+        <p style="line-height: 1;">
+            <h1 style="margin:0;padding-bottom: 0;  text-shadow: 2px 2px 5px steelblue;;"><u>RASRAJ</u></h1>
+            <h3 style="margin: 0;padding-top: 0;font-family: Brush Script MT;">The Food Valley<span style='font-size:25px;'>&#128523;</span></h3>
+            
+        </p>
+    </header>
+    <section class="BG">
+        <div id="N1">
+            <nav>
+                <button>Home</button>
+                <a href="#M"><button>Menu</button></a>
+                <a href="#Ord"><button>Order Online</button></a>
+                <a href="#Res"><button>Reservation</button></a>
+                <a href="#AU"><button>About Us</button></a>
+                <a href="#Ga"><button>Gallery</button></a>
+            </nav>
+        </div>
+        <div >
+            <img src="quoteR.gif" class="I1" width="600" height="460" style="box-shadow: 4px 4px 2px 3px rgba(128, 128, 128, 0.432);"/>
+           
+        </div>
+        <hr>
+        <div id=M>
+            <h2>&#10024;Menu &#127828;</h2>
+            <hr>
+            <img src="depositphotos-removebg-preview.png" style="float:left;width: 35%;">
+            <table>
+                <caption><strong>Main Dishes</strong></caption>
+                <tr>
+                    <th>Dish</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Spaghetti Carbonara</td>
+                    <td> &#8377; 560</td>
+                </tr>
+                <tr>
+                    <td>Spaghetti bolognese</td>
+                    <td>&#8377; 400</td>
+                </tr>
+                <tr>
+                    <td>Spaghetti aglio olio</td>
+                    <td>&#8377; 320</td>
+                </tr>
+                <tr>
+                    <td>Grilled chicken steak</td>
+                    <td>&#8377; 350</td>
+                </tr>
+                <tr>
+                    <td>Chicken salad</td>
+                    <td>&#8377; 500</td>
+                </tr>
+                <tr>
+                    <td>Fried rice with egg</td>
+                    <td>&#8377; 600</td>
+                </tr>
+            </table>
+            <img src="french-fries-burger_107767-80-removebg-preview.png" style="float:right;width: 40%;">
+            <table>
+                <caption><strong>Snacks</strong></caption>
+                <tr>
+                    <th>Dish</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Sandwitch</td>
+                    <td> &#8377; 50</td>
+                </tr>
+                <tr>
+                    <td>French fries</td>
+                    <td>&#8377; 40</td>
+                </tr>
+                <tr>
+                    <td>Fruit Salad</td>
+                    <td>&#8377; 100</td>
+                </tr>
+                <tr>
+                    <td>Caramel cake</td>
+                    <td>&#8377; 200</td>
+                </tr>
+                <tr>
+                    <td>Pudding</td>
+                    <td>&#8377; 250</td>
+                </tr>
+                <tr>
+                    <td>Vanilla icecream</td>
+                    <td>&#8377; 160</td>
+                </tr>
+            </table>
+            <img src="milk-shake-coffee-and-soda_gg120112919-removebg-preview.png" style="float:left;width: 34%;">
+            <table>
+                <caption><strong>Beverages</strong></caption>
+                <tr>
+                    <th>Dish</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Coffee</td>
+                    <td> &#8377; 20</td>
+                </tr>
+                <tr>
+                    <td>Orange juice</td>
+                    <td>&#8377; 15</td>
+                </tr>
+                <tr>
+                    <td>Ice tea</td>
+                    <td>&#8377; 10</td>
+                </tr>
+                <tr>
+                    <td>Milk shake</td>
+                    <td>&#8377; 30</td>
+                </tr>
+                <tr>
+                    <td>Soda</td>
+                    <td>&#8377; 25</td>
+                </tr>
+                <tr>
+                    <td>Pinneapple juice</td>
+                    <td>&#8377; 15</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        
+        
+        <div id="Ord">
+            <img src="depositphotos_84507704-stock-illustration-ordering-food-online.jpg" style="float:left;width:20%" height="220">
+            <img src="428-4282931_uber-for-food-delivery-food-delivery.png" style="float:right;width:20%">
+            <h2 style="text-align:center;color: aliceblue;">&#10024;Online order &#128722;</h2>
+            <div style="display:block;">
+            <p style="text-align:center;color: aliceblue;">Place your order online!<br>
+                & get the delicious food right at your doorstep.<br> Order Now on: <br>
+            <nav style="text-align: center;"> 
+            <a href="https://www.swiggy.com/" target="_blank"><button style="border-radius: 12px;">Swiggy</button></a>
+            <a href="http://www.zomato.com/" target="_blank"><button style="border-radius: 12px;">Zomato</button></a>
+            </nav>
+            <br>
+            </p>
+            </div>   
+        </div>
+        <hr>
+            
+        <div style="color: aliceblue;display: inline-block;" id="Ga">
+            <h2 style="text-align: center;">&#10024;Image gallery &#128248;</h2>
+            <div class="gallery">
+                <a target="_blank" href="nick-karvounis-Ciqxn7FE4vE-unsplash.jpg">
+                  <img src="nick-karvounis-Ciqxn7FE4vE-unsplash.jpg" alt="Interior"  >
+                </a>
+                <div class="desc">Restaurant Interior</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="download (1).jpeg">
+                  <img src="download (1).jpeg" alt="waiter" >
+                </a>
+                <div class="desc">Waiter delivering food</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg">
+                  <img src="jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg" alt="table" >
+                </a>
+                <div class="desc">Food arranged on table</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="manek-singh-DpMzZFt18r0-unsplash.jpg">
+                  <img src="manek-singh-DpMzZFt18r0-unsplash.jpg" alt="Mountains">
+                </a>
+                <div class="desc">Delicious food and service</div>
+              </div>
+        </div>
+        <div style="color: aliceblue;display: inline-block;">
+            <div class="gallery">
+                <a target="_blank" href="rawkkim-pys46FwRnJE-unsplash.jpg">
+                  <img src="rawkkim-pys46FwRnJE-unsplash.jpg" alt="building">
+                </a>
+                <div class="desc">Restaurant building</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="hitesh-dewasi-5JwBbnyZzfc-unsplash.jpg">
+                  <img src="hitesh-dewasi-5JwBbnyZzfc-unsplash.jpg" alt="Reserved">
+                </a>
+                <div class="desc">Reserved table</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="michael-browning-MtqG1lWcUw0-unsplash.jpg">
+                  <img src="michael-browning-MtqG1lWcUw0-unsplash.jpg" alt="Kitchen">
+                </a>
+                <div class="desc">Restaurant kitchen</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="priscilla-du-preez-Q7wGvnbuwj0-unsplash.jpg">
+                  <img src="priscilla-du-preez-Q7wGvnbuwj0-unsplash.jpg" alt="Event">
+                </a>
+                <div class="desc">Restaurant event</div>
+              </div>
+        </div>
+        <hr>
+        <section>
+        <div class="R" id="Res">
+            <h2>&#10024;Reservations &#128198;</h2>
+            <p>Reserve the seats for special occasions and make it more precious &#128519;</p>
+            <form id="F1" style=" text-align: center;">
+                <nav>
+                    <label for="Rdate">Date:</label>
+                    <input type="date" id="Rdate" name="Rdate">
+
+                    <label for="Rtime">Time:</label>
+                    <input type="time" id="Rtime" name="Rtime">
+
+                    <label for="PS">Party Size:</label>
+                    <select id="PS" name="PS" form="F1">
+                    <option value="1">1 table</option>
+                    <option value="2">2 tables</option>
+                    <option value="3">3 tables</option>
+                    <option value="4">4 tables</option>
+                    <option value="4">5 tables</option>
+                    <input type="submit" value="Book now">
+                    </select>
+                </nav>
+            </form>
+        </div>
+    </section>
+        <hr>
+        <div style="color: aliceblue;display: inline-block; text-align: center;"  id="AU">
+        <h2 style="text-align: center;">&#10024;About us &#128522;</h2>
+        
+        <div class="V">
+        <p>RASRAJ Restaurant was formed in 1992 by Yash P.K. Since then we kept moving forward with one goal in mind.</p>
+        <p>At Rasraj, we believe in everything at its prime. Our focus is to bring the best and most responsibly sourced ingredients to the table.
+        Our staunch belief in providing exceptional quality products with friendly service in a clean and welcoming setting has helped us earn the reputation among the locals as one of the best hidden gems in Chandrapur,city.
+        </p>
+        <p>&#127942; Rasraj was recognized with three star in the 2019, 2020 & 2021 cleanliness guides.</p>
+        </div>
+        <div class="V">
+            <iframe width=400 height=200 src="https://www.youtube.com/embed/G4AjHI1PUic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <hr>
+        <div style="color: aliceblue;" class="C">
+        <h4 >&#128379;  Contact us:</h4>
+        <p>X72P+HWX, Ramnagar, Chandrapur,<br>Maharashtra 442402<br>
+        <address><a href="mailto:ayushburadkar056@gmail.com " style="color: aliceblue;">  &#128231; Mail </a><br>
+        <a href="tel:+9156142890" style="color: aliceblue;">&#128222; Contact</a>
+        </address>
+        </p>
+        </div>
+        <div style="color: aliceblue;" class="C">
+        <h4>&#128339;  Opening hours:</h4>
+        <dl>
+            <dt> Monday - Friday</dt>
+            <dd>11am - 11pm</dd>
+            <dt>Saturday - Sunday</dt>
+            <dd>10am - 12am</dd>
+        </dl>
+        </div>
+        <div class="C">
+            <h4 style="color: aliceblue;">&#128205;  Find us:</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30000.583303559568!2d79.29605818833859!3d19.963435682850164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd2d5d4a87f2f3b%3A0x5a4704c62b5b3eb0!2sRASRAJ!5e0!3m2!1sen!2sin!4v1642508839846!5m2!1sen!2sin"
+                 style="border:2px solid aliceblue ;border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="C" style="color: aliceblue;">
+            <h4>&#128489;  Message us:</h4>
+            <form>
+            <fieldset style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </p>
+        <p>
+            <label for="no">Phone No.:</label>
+            <input type="text" id="no">
+        </p>
+        <p>
+            <label for="email">E-mail address:</label>
+            <input type="text" id="email">
+        </p>
+        <p>
+            <label for="mes">Message:</label><br>
+            <textarea id="mes" row=5 column=50></textarea>
+        </p>
+            <input type="submit" value="Send message">
+            </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

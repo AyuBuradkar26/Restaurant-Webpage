@@ -1,0 +1,63 @@
+header {
+    text-align: center;
+    color: blueviolet;
+    background:radial-gradient(aliceblue 35%,paleturquoise);
+}
+
+button {
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 50%;
+    color: darkblue;
+    cursor:pointer;
+}
+button:hover{
+    background-color:paleturquoise;
+}
+
+body {
+    background-image: url("C:\Users\HP\Desktop\3rd year\2nd Sem\WT\blue_background_184212.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkslategrey;
+}
+
+hr {
+    border: 0;
+    border-top: 3px double aliceblue;
+}
+
+table, th, td {
+    border: 2px solid aliceblue;
+    padding: 5px;
+    margin:20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    background-color: cadetblue;
+}
+    
+table {
+    margin: auto;
+    width:50%;
+    margin-bottom: 20px;
+}
+
+caption {
+    margin-top: 10px;
+    background-color: darkslateblue;
+    padding:5px
+}
+
+fieldset{
+    background-color: cadetblue;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    padding: 0 .625em;
+}
